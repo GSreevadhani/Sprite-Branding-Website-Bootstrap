@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.join-button {
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.join-button:hover {
+    background-color: #00b383;
+}
+
+.navbar {
+    background-color: #fff;
+    height: 100px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: black;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section {
+    background: url('home_sprite2.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-section {
+    padding: 50px 0;
+}
+
+.about-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#read-more {
+    margin-top: 20px;
+}
+.team-grid {
+    color:#313437;
+    background-color:#fff;
+    
+  }
+  
+  .team-grid p {
+    color:#7d8285;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  .team-grid h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  @media (max-width:767px) {
+    .team-grid h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+      font-family: 'Montserrat';
+    }
+  }
+  
+  .team-grid .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto;
+  }
+  
+  .team-grid .intro p {
+    margin-bottom:0;
+  }
+  
+  .team-grid .people {
+    padding:50px 0;
+  }
+  
+  .team-grid .item {
+    margin-bottom:30px;
+  }
+  
+  .team-grid .item .box {
+    text-align:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:280px;
+    position:relative;
+    overflow:hidden;
+  }
+  
+  .team-grid .item .cover {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(31,148,255,0.75);
+    transition:opacity 0.15s ease-in;
+    opacity:0;
+    padding-top:80px;
+    color:#fff;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+  }
+  
+  .team-grid .item:hover .cover {
+    opacity:1;
+  }
+  
+  .team-grid .item .name {
+    font-weight:bold;
+    margin-bottom:8px;
+  }
+  
+  .team-grid .item .title {
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#bbd8fb;
+    letter-spacing:2px;
+    font-size:13px;
+    margin-bottom:20px;
+  }
+  
+  .team-grid .social {
+    font-size:18px;
+  }
+  
+  .team-grid .social a {
+    color:inherit;
+    margin:0 10px;
+    display:inline-block;
+    opacity:0.7;
+  }
+  
+  .team-grid .social a:hover {
+    opacity:1;
+  }
+  
+  
